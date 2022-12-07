@@ -12,7 +12,7 @@ This was an elaborate test on working with pixels and implementing opacity. I go
 # How
 The ghosts are drawn on a separate surface with the same dimensions as the visible surface.
 When the scope overlaps a ghost's coordinates, the overlapping part of the ghost is copied to the visible surface.
-But first it has ~opacity~ applied to it. Pixel = ghost_pixel * opacity + destination_pixel * (1 - opacity).
+But first it has *opacity* applied to it. Pixel = ghost_pixel * opacity + destination_pixel * (1 - opacity).
 
 A separate image is used to provide the opacity values for the scope. Higher opacity towards the center.
 Because I don't have any imaging software that can actually save images with partial opacity, I made up my own system.
